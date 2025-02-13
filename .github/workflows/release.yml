@@ -26,7 +26,7 @@ jobs:
         include:
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-latest
-            features: systemd,io_uring
+            # features: systemd,io_uring
           - target: aarch64-unknown-linux-gnu
             os: ubuntu-latest
           # Universal macOS binary is supported as universal-apple-darwin.
