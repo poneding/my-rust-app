@@ -63,4 +63,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           # (optional) Comma-separated list of additional files to be included to archive.
           # Note that glob pattern is not supported yet.
-          include: LICENSE,README.md,README_zh_CN.md
+          include: LICENSE,README.md,README_zh-CN.md
