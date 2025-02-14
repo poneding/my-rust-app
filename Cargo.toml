@@ -1,6 +1,6 @@
 [package]
-name = "rust-app"
-version = "0.1.17"
+name = "rust-app-01"
+version = "0.1.18"
 edition = "2021"
 
 [dependencies]
