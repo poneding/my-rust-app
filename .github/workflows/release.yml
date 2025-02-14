@@ -36,15 +36,15 @@ jobs:
           # Universal macOS binary is supported as universal-apple-darwin.
           - target: universal-apple-darwin
             os: macos-latest
-            target_os: macos
+            target_os: darwin
             target_arch: universal
           - target: aarch64-apple-darwin
             os: macos-latest
-            target_os: macos
+            target_os: darwin
             target_arch: arm64
           - target: x86_64-apple-darwin
             os: macos-latest
-            target_os: macos
+            target_os: darwin
             target_arch: amd64
           - target: x86_64-pc-windows-msvc
             os: windows-latest
