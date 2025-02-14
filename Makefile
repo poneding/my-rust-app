@@ -1,9 +1,14 @@
+VERSION := $(shell cargo pkgid | awk -F'@' '{print $$NF}')
+export VERSION
+
 .PHONY:
-release:
+commit:
 	git add .
 	git commit --all --message "update"
 	git push
-	export VERSION=$(cargo pkgid | awk -F'@' '{print $NF}')
-	git tag -a $(VERSION) -m "release $(VERSION)"
-	git push origin $(VERSION)
+
+.PHONY:
+release:
+	git tag -a v$(VERSION) -m "release v$(VERSION)"
+	git push origin v$(VERSION)
 	cargo publish
