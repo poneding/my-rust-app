@@ -60,7 +60,7 @@ jobs:
           # Note that glob pattern is not supported yet.
           bin: rust-app
           # archive format rust-app_version_target.tar.gz
-          archive: $bin_$tag_${{ matrix.target_os }}_${{ matrix.target_arch }}
+          archive: rust-app_${{ steps.get_version.outputs.VERSION }}_${{ matrix.target_os }}_${{ matrix.target_arch }}
           # (optional) Target triple, default is host triple.
           target: ${{ matrix.target }}
           # (optional) On which platform to distribute the `.tar.gz` file.
