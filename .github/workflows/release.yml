@@ -65,11 +65,11 @@ jobs:
           # (optional) On which platform to distribute the `.tar.gz` file.
           # [default value: unix]
           # [possible values: all, unix, windows, none]
-          tar: none
+          tar: unix
           # (optional) On which platform to distribute the `.zip` file.
           # [default value: windows]
           # [possible values: all, unix, windows, none]
-          zip: none
+          zip: windows
           # (optional) Build with the given set of features if any.
           features: ${{ matrix.features || '' }}
           # (required) GitHub token for uploading assets to GitHub Releases.
