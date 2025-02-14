@@ -1,3 +1,3 @@
 fn main() {
-    println!("name: rust-app\nversion: v0.1.11");
+    println!("name: rust-app\nversion: v0.1.12");
 }
