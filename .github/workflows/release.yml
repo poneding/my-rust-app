@@ -26,18 +26,30 @@ jobs:
         include:
           - target: x86_64-unknown-linux-gnu
             os: ubuntu-latest
+            target_os: linux
+            target_arch: amd64
             # features: systemd,io_uring
           - target: aarch64-unknown-linux-gnu
             os: ubuntu-latest
+            target_os: linux
+            target_arch: arm64
           # Universal macOS binary is supported as universal-apple-darwin.
           - target: universal-apple-darwin
             os: macos-latest
+            target_os: macos
+            target_arch: universal
           - target: aarch64-apple-darwin
             os: macos-latest
+            target_os: macos
+            target_arch: arm64
           - target: x86_64-apple-darwin
             os: macos-latest
+            target_os: macos
+            target_arch: amd64
           - target: x86_64-pc-windows-msvc
             os: windows-latest
+            target_os: windows
+            target_arch: amd64
     runs-on: ${{ matrix.os }}
     needs: create-release
     steps:
@@ -46,7 +58,9 @@ jobs:
         with:
           # (required) Comma-separated list of binary names (non-extension portion of filename) to build and upload.
           # Note that glob pattern is not supported yet.
-          bin: ${{ github.repository_name }}
+          bin: rust-app
+          # archive format rust-app_version_target.tar.gz
+          archive: $bin_$tag_${{ matrix.target_os }}_${{ matrix.target_arch }}
           # (optional) Target triple, default is host triple.
           target: ${{ matrix.target }}
           # (optional) On which platform to distribute the `.tar.gz` file.
