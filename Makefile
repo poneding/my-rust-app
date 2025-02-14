@@ -2,6 +2,9 @@ VERSION := $(shell cargo pkgid | awk -F'@' '{print $$NF}')
 export VERSION
 
 .PHONY:
+all: commit release
+
+.PHONY:
 commit:
 	git add .
 	git commit --all --message "update"
