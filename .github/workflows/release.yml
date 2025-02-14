@@ -58,7 +58,7 @@ jobs:
         with:
           # (required) Comma-separated list of binary names (non-extension portion of filename) to build and upload.
           # Note that glob pattern is not supported yet.
-          bin: rust-app
+          bin: my-rust-app
           archive: $bin_$tag_${{ matrix.target_os }}_${{ matrix.target_arch }}
           # (optional) Target triple, default is host triple.
           target: ${{ matrix.target }}

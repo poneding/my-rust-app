@@ -1,6 +1,13 @@
 [package]
-name = "rust-app-01"
-version = "0.1.18"
+name = "my-rust-app"
+version = "0.1.19"
 edition = "2021"
+authors = ["Pone Ding <poneding@gmail.com>"]
+description = "My Rust application."
+repository = "https://github.com/poneding/my-rust-app"
+homepage = "https://github.com/poneding/my-rust-app"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["my-rust-app"]
 
 [dependencies]

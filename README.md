@@ -1,3 +1,3 @@
-# rust-app
+# my-rust-app
 
 My Rust application.
