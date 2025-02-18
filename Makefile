@@ -1,4 +1,4 @@
-VERSION := $(shell cargo pkgid | awk -F'\#' '{print $$NF}')
+VERSION := $(shell cargo pkgid | awk -F'@' '{print $$NF}')
 export VERSION
 
 .PHONY:
@@ -15,3 +15,7 @@ release:
 	git tag -a v$(VERSION) -m "release v$(VERSION)"
 	git push origin v$(VERSION)
 	cargo publish
+
+.PHONY:
+check:
+	echo $(VERSION)
