@@ -1,6 +1,6 @@
 [package]
 name = "my-rust-app"
-version = "0.1.32"
+version = "0.1.33"
 edition = "2021"
 authors = ["Pone Ding <poneding@gmail.com>"]
 description = "My Rust application."
@@ -14,3 +14,4 @@ keywords = ["my-rust-app"]
 # git2 = { version = "0.20.0", features = ["vendored-openssl"] }
 # openssl = { version = "0.10.71", features = ["vendored"] }
 ssh2 = { version = "0.9.5", features = ["vendored-openssl"] }
+termion = "4.0.3"
