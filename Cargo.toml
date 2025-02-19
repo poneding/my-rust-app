@@ -1,6 +1,6 @@
 [package]
 name = "my-rust-app"
-version = "0.1.27"
+version = "0.1.28"
 edition = "2021"
 authors = ["Pone Ding <poneding@gmail.com>"]
 description = "My Rust application."
@@ -12,4 +12,9 @@ keywords = ["my-rust-app"]
 
 [dependencies]
 # openssl = { version = "0.10.71", features = ["vendored"] }
-ssh2 = { version = "0.9.5", features = ["vendored-openssl"] }
+# ssh2 = { version = "0.9.5", features = ["vendored-openssl"] }
+ssh2 = "0.9.5"
+
+[features]
+default = []
+vendored-openssl = ["ssh2/vendored-openssl"]

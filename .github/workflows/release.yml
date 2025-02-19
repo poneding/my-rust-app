@@ -77,7 +77,8 @@ jobs:
           # [possible values: all, unix, windows, none]
           zip: windows
           # (optional) Build with the given set of features if any.
-          features: ${{ matrix.features || '' }}
+          # features: ${{ matrix.features || '' }}
+          features: vendored-openssl
           # (required) GitHub token for uploading assets to GitHub Releases.
           token: ${{ secrets.GITHUB_TOKEN }}
           # (optional) Comma-separated list of additional files to be included to archive.
