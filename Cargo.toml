@@ -1,6 +1,6 @@
 [package]
 name = "my-rust-app"
-version = "0.1.34"
+version = "0.1.35"
 edition = "2021"
 authors = ["Pone Ding <poneding@gmail.com>"]
 description = "My Rust application."
@@ -11,8 +11,23 @@ readme = "README.md"
 keywords = ["my-rust-app"]
 
 [dependencies]
+anyhow = "1.0.95"
+base64 = "0.22.1"
+clap = { version = "4.5.30", features = [
+    "derive",
+    "string",
+    "unstable-ext",
+    "env",
+] }
+clap_complete = { version = "4.5.45", features = ["unstable-dynamic"] }
+console = "0.15.10"
 crossterm = "0.28.1"
-# git2 = { version = "0.20.0", features = ["vendored-openssl"] }
-# openssl = { version = "0.10.71", features = ["vendored"] }
-ssh2 = { version = "0.9.5", features = ["vendored-openssl"] }
-termion = "4.0.3"
+dialoguer = "0.11.0"
+russh = "0.50.2"
+serde = { version = "1.0.217", features = ["derive"] }
+serde_yaml = "0.9.34"
+shellexpand = "3.1.0"
+tabled = "0.18.0"
+tokio = { version = "1.43.0", features = ["full"] }
+tokio-fd = "0.3.0"
+trust-dns-resolver = "0.23.2"
