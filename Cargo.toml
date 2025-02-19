@@ -1,6 +1,6 @@
 [package]
 name = "my-rust-app"
-version = "0.1.35"
+version = "0.1.36"
 edition = "2021"
 authors = ["Pone Ding <poneding@gmail.com>"]
 description = "My Rust application."
@@ -29,5 +29,4 @@ serde_yaml = "0.9.34"
 shellexpand = "3.1.0"
 tabled = "0.18.0"
 tokio = { version = "1.43.0", features = ["full"] }
-tokio-fd = "0.3.0"
 trust-dns-resolver = "0.23.2"
