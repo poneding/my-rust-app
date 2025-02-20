@@ -18,7 +18,7 @@ jobs:
           # (optional) Path to changelog.
           # changelog: CHANGELOG.md
           # (required) GitHub token for creating GitHub Releases.
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
 
   upload-assets:
     strategy:
@@ -74,7 +74,7 @@ jobs:
           # (optional) Build with the given set of features if any.
           features: ${{ matrix.features || '' }}
           # (required) GitHub token for uploading assets to GitHub Releases.
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           # (optional) Comma-separated list of additional files to be included to archive.
           # Note that glob pattern is not supported yet.
           # include: LICENSE,README.md,README_zh-CN.md
