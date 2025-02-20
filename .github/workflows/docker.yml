@@ -1,11 +1,11 @@
-name: docker
+name: Docker
 
 env:
   IMAGE: my-rust-app
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
