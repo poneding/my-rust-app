@@ -3,6 +3,9 @@ name: Release
 permissions:
   contents: write
 
+env:
+  IMAGE: my-rust-app
+
 on:
   push:
     tags:
