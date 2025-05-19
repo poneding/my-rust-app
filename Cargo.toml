@@ -12,4 +12,3 @@ keywords = ["my-rust-app"]
 
 [dependencies]
 ssh2-config = "0.5.4"
-openssl = { version = "0.10.72", features = ["vendored"] }
