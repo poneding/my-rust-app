@@ -1,6 +1,6 @@
 [package]
 name = "my-rust-app"
-version = "0.1.53"
+version = "0.1.54"
 edition = "2024"
 authors = ["Pone Ding <poneding@gmail.com>"]
 description = "My Rust application."
@@ -12,3 +12,4 @@ keywords = ["my-rust-app"]
 
 [dependencies]
 ssh2-config = "0.5.4"
+git2 = { version = "0.20.2", default-features = false }
