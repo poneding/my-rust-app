@@ -1,6 +1,6 @@
 [package]
 name = "my-rust-app"
-version = "0.1.54"
+version = "0.1.55"
 edition = "2024"
 authors = ["Pone Ding <poneding@gmail.com>"]
 description = "My Rust application."
@@ -9,7 +9,3 @@ homepage = "https://github.com/poneding/my-rust-app"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
 keywords = ["my-rust-app"]
-
-[dependencies]
-ssh2-config = "0.5.4"
-git2 = { version = "0.20.2", default-features = false }
